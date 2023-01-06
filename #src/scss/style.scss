@@ -1,0 +1,30 @@
+@import "mixin";
+@import "nullstyle";
+@import "fonts";
+@import "header";
+// @import "ui";
+@import "footer";
+@import "mainSlaider";
+@import "review";
+@import "burgerDesctop";
+@import "classes";
+
+//*==================>
+
+body{
+	font-family: "Circe";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: #2a2a2a;
+	position: relative;
+}
+.container{
+	width: 1292px;
+	margin: 0 auto;
+	
+}
+
+
+
+

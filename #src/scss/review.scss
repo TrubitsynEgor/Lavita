@@ -1,0 +1,152 @@
+.box{
+	display: flex;
+	align-items: center;
+	@media (max-width: 680px){
+		width: 60%;
+	}
+	@media (max-width: 426px){
+		width: 44%;
+	}
+}
+
+.desc {
+	margin: 100px 0px 0px 200px;
+	@media (max-width: 1024px){
+		margin: 100px 0px 0px 10px;
+	}
+	@media (max-width: 680px){
+		margin: 50px 0px 0px 10px
+	}
+
+
+	&__img{
+		opacity: .1;
+		margin: 0px 200px 0px 0px;
+		transform: translateX(10%);
+		@media (max-width: 1024px){
+			display: none;
+		}
+	}
+	&__content {
+		border: 10px solid #EC1B2E;
+		border-top: transparent;
+		margin: 100px 0px 0px 0px;
+		position: relative;
+		margin: 0px 55px 0px 0px;
+		@media (max-width: 1024px){
+			width: 50%;
+		
+		}
+		@media (max-width: 1024px){
+			&::after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				
+			background-image:url(..//img/Subtract.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			opacity: .1;
+			}
+		}
+	
+	}
+
+	&__head {
+		position: absolute;
+		left: 15.008%;
+		top: -11.5%;
+		font-family: 'Circe';
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 140%;
+letter-spacing: 0.01em;
+color: #333333;
+@media (max-width: 680px){
+	font-size: 30px;
+	left: 19.008%;
+	top: -5.2%;
+}
+@media (max-width: 426px){
+	font-size: 24px;
+	top: -4.3%;
+
+}
+
+		
+		&::after{
+			content: '';
+			position: absolute;
+			left: -16.1%;
+			top: 50%;
+			transform: translateX(-50%);
+			height: 10px;
+			width: 90px;
+			background-color: #EC1B2E;
+			@media (max-width: 1024px){
+				left: -16.5%;
+			}
+			@media (max-width: 680px){
+				width: 70px;
+				left: -20%;
+			}
+			@media (max-width: 426px){
+				width: 50px;
+			}
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			left: 103.6%;
+			top: 50%;
+			height: 10px;
+			width: 165px;
+			background-color: #EC1B2E;
+			@media (max-width: 1024px){
+				width: 173px;
+			}
+			@media (max-width: 680px){
+				width: 77px;
+				
+			}
+			@media (max-width: 426px){
+				width:39px;
+			}
+		}
+	}
+
+	&__text {
+		padding: 70px 50px 0px 50px;
+		font-family: 'Circe';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+color: #333333;
+		&:last-child{
+			padding-top: 25px;
+			padding-bottom: 80px;
+			@media (max-width: 680px){
+				padding-bottom: 40px;
+				
+			}
+			@media (max-width: 426px){
+				padding-bottom: 20px;
+			}
+			
+		
+		}
+		@media (max-width: 680px){
+			padding: 40px 25px 0px 25px;
+			
+		}
+		@media (max-width: 426px){
+			padding: 20px 15px 0px 10px;
+		}
+	}
+}
