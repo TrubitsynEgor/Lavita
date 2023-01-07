@@ -1,0 +1,121 @@
+.classes {
+margin: 150px 0px;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.classes__title {
+	font-weight: 800;
+	font-size: 48px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #333333;
+	
+}
+.classes__btn-box{
+	margin: 0px 15em 0px 0px;
+	
+}
+.classes__btn {
+	display: inline-block;
+	padding: 14px 20px 12px 20px;
+	background-color:#EC1B2E;
+	width: 175px;
+height: 68px;
+margin: 64px 200px 42px 0px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+.classses__tabs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.tabs__title-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	margin: 0px 0px 60px 0px;
+	
+	max-width: 70vw;
+	
+}
+.tabs__title-link {
+	display: block;
+	font-weight: 700;
+font-size: 24px;
+text-align: center;
+margin: 0px 0px 0px 24px;
+
+line-height: 140%;
+color: #333333;
+}
+
+.tabs__body {
+	max-width: 60vw;
+}
+.tabs__body-title {
+	background: rgba(51, 51, 51, 0.05);
+	display: grid;
+	grid-template-columns:14.7em 14.7em 1fr;
+	font-weight: 700;
+font-size: 20px;
+line-height: 140%;
+color: #333333;
+
+}
+.tabs__body-title p {
+	padding: 10px 10em 10px 20px;
+	
+}
+.tabs__body-info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+margin: 30px 0px 60px 0px;
+font-weight: 400;
+font-size: 18px;
+color: #333333;
+position: relative;
+}
+.tabs__body-info::before{
+	content: '';
+	position: absolute;
+	bottom: -15%;
+	left: 0;
+	width: 70vw;
+height: 1px;
+background-color: rgba(0, 0, 0, 0.2);
+}
+.tabs__body-info:last-child:before{
+	display: none;
+}
+.tabs__body-info p {
+	line-height: 140%;	
+	padding: 0px 0px 0px 30px;
+	
+}
+.tabs__body-info:not(:nth-child(1)) span{
+	display: inline-block;
+	margin: 0px 0px 10px 0px;
+	
+}
+.tabs__body-info:nth-child(1) span{
+	margin: 10px 0px 0px 0px;
+	
+}
+.accent{
+	display: inline-block;
+	background-color: #EC1B2E;
+	font-weight: 700;
+font-size: 18px;
+line-height: 140%;
+color: #FFFFFF;
+padding: 3px 5px;
+}
+
