@@ -407,6 +407,7 @@ h6 {
   text-align: center;
   letter-spacing: 0.01em;
   color: #333333;
+  font-size: calc(28px + 20 * ((100vw - 320px) / 1120));
 }
 
 .classes__btn-box {
@@ -450,11 +451,11 @@ h6 {
 .tabs__title-link {
   display: block;
   font-weight: 700;
-  font-size: 24px;
   text-align: center;
   margin: 0px 0px 0px 24px;
   line-height: 140%;
   color: #333333;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1120));
 }
 
 .tabs__title-link.active {
@@ -473,11 +474,12 @@ h6 {
 .tabs__body-title {
   background: rgba(51, 51, 51, 0.05);
   display: grid;
-  grid-template-columns: 14.7em 14.7em 1fr;
+  grid-template-columns: 13.7em 13.1em 1fr;
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: #333333;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
 }
 
 .tabs__body-title p {
@@ -544,6 +546,12 @@ body {
 .container {
   width: 1292px;
   margin: 0 auto;
+}
+
+@media (max-width: 1535px) {
+  .tabs__body-title {
+    grid-template-columns: 11.7em 11.7em 1fr;
+  }
 }
 
 @media (max-width: 1320px) {
@@ -652,6 +660,28 @@ body {
   }
 }
 
+@media (max-width: 1235px) {
+  .tabs__body-title {
+    grid-template-columns: 9.7em 9em 1fr;
+  }
+}
+
+@media (max-width: 1030px) {
+  .tabs__body-title {
+    grid-template-columns: 9.6em 9.6em 1fr;
+  }
+}
+
+@media (max-width: 1025px) {
+  .tabs__title-list {
+    max-width: 80vw;
+  }
+
+  .tabs__body {
+    max-width: 70vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .header__contacts-link {
     margin: 0px 0px 10px 0px;
@@ -706,6 +736,22 @@ body {
   }
 }
 
+@media (max-width: 985px) {
+  .classes__btn {
+    margin: 64px 30px 42px 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .tabs__title-list {
+    max-width: 90vw;
+  }
+
+  .tabs__body {
+    max-width: 80vw;
+  }
+}
+
 @media (max-width: 880px) {
   .slide-header {
     width: 386px;
@@ -723,6 +769,10 @@ body {
   .swipe-next img,
   .swipe-prev img {
     display: none;
+  }
+
+  .classes__btn-box {
+    margin: 0px 0em 0px 0px;
   }
 }
 
@@ -799,6 +849,13 @@ body {
   }
 
   .burger-desctop__menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 430px) {
+  .classes__btn {
+    margin: 30px auto;
     display: block;
   }
 }
