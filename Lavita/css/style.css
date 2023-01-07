@@ -457,8 +457,17 @@ h6 {
   color: #333333;
 }
 
+.tabs__title-link.active {
+  color: #EC1B2E;
+}
+
 .tabs__body {
   max-width: 60vw;
+  display: none;
+}
+
+.tabs__body.active {
+  display: block;
 }
 
 .tabs__body-title {
