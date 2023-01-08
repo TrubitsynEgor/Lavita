@@ -1,0 +1,68 @@
+.exams {
+	margin: 0px 0px 150px 0px;
+	height: 100vh;
+}
+.exams__title {
+	font-weight: 800;
+font-size: 48px;
+line-height: 140%;
+text-align: center;
+letter-spacing: 0.01em;
+color: #333333;
+margin: 0px 0px 100px 0px;
+
+
+}
+.exams__cards {
+	display: grid;
+	grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+	grid-auto-flow: row;
+}
+.exams__cards-item {
+
+}
+.exams__cards-img {
+}
+.exams__cards-subtitle {
+	font-weight: 700;
+font-size: 24px;
+line-height: 140%;
+text-align: center;
+color: #333333;
+padding: 30px;
+}
+.exams__cards-list {
+	
+}
+.exams__cards-text {
+	font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #333333;
+padding: 0px 0px 25px 30px;
+position: relative;
+}
+.exams__cards-text::before{
+	content: '';
+	position: absolute;
+	left: 6%;
+	top: 13%;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color:#333333; 
+}
+.exams__cards-btn {
+text-align: center;
+	padding: 12px 30px ;
+	display: block;
+	background: #EC1B2E;
+	font-weight: 700;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+margin: 0 auto;
+width: 50%;
+
+
+}
