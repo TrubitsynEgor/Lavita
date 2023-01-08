@@ -5,7 +5,9 @@ margin: 100px 0px;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- 
+ @media (max-width: 767px) {
+	margin: 40px 0px;
+}
 }
 .classes__title {
 	font-weight: 800;
@@ -136,7 +138,7 @@ position: relative;
 	position: absolute;
 	bottom: -15%;
 	left: 0;
-	width: 70vw;
+	width: 60vw;
 height: 1px;
 background-color: rgba(0, 0, 0, 0.2);
 }

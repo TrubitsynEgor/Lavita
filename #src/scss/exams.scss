@@ -1,6 +1,11 @@
 .exams {
 	margin: 0px 0px 150px 0px;
 	height: 100vh;
+	width: 100%;
+}
+.exams__container{
+	max-width: 1292px;
+	margin: 0 auto;
 }
 .exams__title {
 	font-weight: 800;
@@ -10,16 +15,22 @@ text-align: center;
 letter-spacing: 0.01em;
 color: #333333;
 margin: 0px 0px 100px 0px;
-
+@media (max-width:767px) {
+	margin: 0px 0px 40px 0px;
+}
 
 }
 .exams__cards {
-	display: grid;
-	grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-	grid-auto-flow: row;
+display: grid;
+grid-template-columns: repeat(auto-fill, 304px);
+gap: 20px;
 }
 .exams__cards-item {
 
+	@media (max-width: 767px) {
+		margin: 0px 0px 20px 20px;
+		
+	}
 }
 .exams__cards-img {
 }
