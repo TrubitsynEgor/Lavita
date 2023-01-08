@@ -1,0 +1,39 @@
+.accardion{
+	display: none;
+}
+
+@media (max-width: 767px){
+	.accardion{
+		display: block;
+	}
+	.tabs__title-list{
+	width: 100%;
+display: flex;
+flex-direction: column;
+
+	
+	}
+	.tabs__title-link_mobile{
+		margin: 0px 0px 20px 0px;
+		font-size: 25px;
+		display: block;
+	}
+	.tabs__body-title{
+		padding: 10px;
+		margin: 0px 0px 10px 10px;
+		
+	}
+
+	.tabs__body-info{
+		display: flex;
+		flex-direction: column;
+		margin: 10px 0px 20px 0px;
+		
+	}
+	.tabs__title-item{
+		display: none;
+	}
+	.tabs__title-item.active{
+		display: block;
+	}
+}

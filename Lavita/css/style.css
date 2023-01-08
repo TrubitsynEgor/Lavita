@@ -534,6 +534,10 @@ h6 {
   padding: 3px 5px;
 }
 
+.accardion {
+  display: none;
+}
+
 body {
   font-family: "Circe";
   font-weight: 400;
@@ -773,6 +777,59 @@ body {
 
   .classes__btn-box {
     margin: 0px 0em 0px 0px;
+  }
+
+  .tabs__title-link {
+    display: none;
+  }
+
+  .tabs__body.active {
+    display: none;
+  }
+
+  .accardion {
+    display: block;
+  }
+
+  .tabs__title-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tabs__title-link_mobile {
+    margin: 0px 0px 20px 0px;
+    font-size: 25px;
+    display: block;
+  }
+
+  .tabs__body-title {
+    padding: 10px;
+    margin: 0px 0px 10px 10px;
+  }
+
+  .tabs__body-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .tabs__title-item {
+    display: none;
+  }
+
+  .tabs__title-item.active {
+    display: block;
   }
 }
 
