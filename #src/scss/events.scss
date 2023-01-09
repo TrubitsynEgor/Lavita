@@ -1,12 +1,6 @@
 .events {
 
 	&__title {
-	font-weight: 800;
-	font-size: 48px;
-	line-height: 140%;
-	text-align: center;
-	letter-spacing: 0.01em;
-	color: #333333;
 	margin: 0px 0px 100px 0px;
 	@media (max-width:768px){
 		margin: 0px 0px 50px 0px;
@@ -35,6 +29,8 @@
 	}
 
 	&__cards-item {
+		display: flex;
+		flex-direction: column;
 		
 	}
 
@@ -57,19 +53,25 @@ color: #333333;
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
+	flex: 1;
 }
 
 	&__cards-btn {
-		display: block;
-		background: #EC1B2E;
-		padding: 12px 30px;
-		font-weight: 700;
+		
+
+	}
+}
+
+.main-btn{
+	display: block;
+	background: #EC1B2E;
+	padding: 12px 30px;
+	font-weight: 700;
 font-size: 20px;
 line-height: 140%;
 color: #FFFFFF;
 text-align: center;
 width: 170px;
-margin: 0 auto;
 
-	}
+
 }
