@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- Page title in browser -->
+	<title>Lavita(training)</title>
+	<!-- Connection CSS -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<!-- Page encoding -->
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+	@@include('_header.html')
+	@@include('_burgerDesctop.html')
+
+	<nav class="main-nav">
+		<ul class="main-nav__list">
+			<li class="main-nav__link"><a href="index.html">Главная</a></li>
+			<li class="main-nav__link"><a href="index.html">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<section class="contacts">
+		<div class="contacts__container">
+			<div id="map">
+			</div>
+			<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+			</script>
+
+
+			<div class="contacts__info-box">
+
+				<div class="contacts__info-item">
+					<h2 class="contacts__info-title">Режим работы</h2>
+					<p class="contacts__info-text">ПН-СБ - С 11:00 ДО 20:00</p>
+					<p class="contacts__info-text">ВС. - НЕ РАБОЧИЙ ДЕНЬ</p>
+				</div>
+
+				<div class="contacts__info-item">
+					<h2 class="contacts__info-title">Расписание директора</h2>
+					<ul class="contacts__info-list">
+						<li class="contacts__list-item contacts__list-item--link"><a href="##">Лиговский пр. 133 Е</a></li>
+						<li class="contacts__list-item">Вторник 14:00-17:00, 18:30-20:00 </li>
+						<li class="contacts__list-item">Среда 14:00-20:00 </li>
+						<li class="contacts__list-item">Четверг 14:00-20:00 </li>
+						<li class="contacts__list-item">Пятница 15:00-17:00, 18:30-20:00 </li>
+						<li class="contacts__list-item">Суббота 15:00-18:30 </li>
+						<li class="contacts__list-item">Воскресенье - выходной день</li>
+					</ul>
+				</div>
+
+				<div class="contacts__info-item">
+					<h2 class="contacts__info-title">Телефоны</h2>
+					<ul class="">
+						<li class="contacts__info-phone"><a href="+78121234567">+7 (812) 123-45-67</a></li>
+						<li class="contacts__info-phone"><a href="+79111234567">+7 (911) 123-45-67</a></li>
+					</ul>
+				</div>
+
+				<div class="contacts__info-item">
+					<h2 class="contacts__info-title">E-mail</h2>
+					<ul>
+						<li class="contacts__info-email">Основная почта</li>
+						<li class="contacts__info-email contacts__info-email--link"><a
+								href="LAVITA_SCHOOL@GMAIL.COM">LAVITA_SCHOOL@GMAIL.COM</a></li>
+						<li class="contacts__info-email">Почта по вопросам экзаменов MSK</li>
+						<li class="contacts__info-email contacts__info-email--link"><a
+								href="LAVITA_MSK@gmail.com">LAVITA_MSK@gmail.com</a></li>
+						<li class="contacts__info-email">Почта по вопросам экзаменов OPT</li>
+						<li class="contacts__info-email contacts__info-email--link"><a
+								href="LAVITA_OPT@gmail.com">LAVITA_OPT@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@@include('_footer.html')
+	<!-- Connection Swiper -->
+	<script src=" https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<!-- Connection jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+		integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<!-- Connection JS -->
+	<script src="js/script.min.js"></script>
+	<!-- npm install webp-converter@2.2.3 --save-dev -->
+
+</body>
+
+</html>

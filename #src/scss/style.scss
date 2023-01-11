@@ -13,6 +13,7 @@
 @import "events";
 @import "news";
 @import "services";
+@import "contacts";
 
 //*==================>
 
@@ -27,8 +28,11 @@ body{
 	width: 1292px;
 	margin: 0 auto;
 }
-
-
+#map{
+	max-width: 100%;
+	height: 500px;
+	margin-bottom: 60px;
+}
 
 
 

@@ -73,4 +73,26 @@ accordionLink.forEach(el => {
 
 
 
+const mapCoords = [59.923468, 30.360649];
+
+function init() {
+	let map = new ymaps.Map('map', {
+		center: mapCoords,
+		zoom: 14
+	})
+	let placemark = new ymaps.Placemark(mapCoords, {}, {
+		iconLayout: 'default#image',
+		iconImageHref: '..//img/location-mark.png',
+		iconImageSize: [30, 30],
+		iconImageOffset: [0, 0]
+	})
+	map.geoObjects.add(placemark);
+}
+
+
+
+ymaps.ready(init)
+
+
+
 
