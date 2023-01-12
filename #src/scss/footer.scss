@@ -10,6 +10,7 @@
 }
 .social__img{
 	fill:#333333;
+	margin-bottom: 25px;
 }
 .social__img:hover{
 	fill: red;
@@ -19,12 +20,16 @@
 
 	&__blocks {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, 18%);
+		grid-template-columns: repeat(auto-fill, 18%);
 		justify-content: center;
 		gap: 20px;
-		padding: 50px 0px 0px 0px;
+		margin: 50px 0px 0px 0px;
 		@media (max-width:1024px) {	
-			grid-template-columns: repeat(auto-fit, 400px);
+			grid-template-columns: repeat(auto-fill, 400px);
+			gap: 10px;
+		}
+		@media (max-width:769px) {	
+			gap: 0px;
 		}
 	}
 	&__blocks-wrap{
@@ -37,6 +42,8 @@
 			display: block;
 		}
 	}
+
+
 
 	&__blocks-item {
 	}
@@ -159,8 +166,8 @@ color: #333333;
 		&::after{
 			content: '';
 		
-			border: 10px solid transparent;
-			border-top: 10px solid black;
+			border: 8px solid transparent;
+			border-top: 7px solid black;
 			position: absolute;
 			right: 0%;top:18%; 
 			height: 10px;width: 10px;
@@ -171,15 +178,15 @@ color: #333333;
 
 }
 .open-btn.active{
-	
 	@media (max-width:769px) {
+		color:#EC1B2E;
 		&::after{
 			content: '';
 		
-			border: 10px solid transparent;
-			border-bottom: 10px solid black;
+			border: 8px solid transparent;
+			border-bottom: 7px solid #EC1B2E;;
 			position: absolute;
-			right: 0%;top:-2%; 
+			right: 0%;top:0%; 
 			height: 10px;width: 10px;
 			}
 	

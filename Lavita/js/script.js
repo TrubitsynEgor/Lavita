@@ -16,18 +16,18 @@ const swiper = new Swiper('.swiper', {
 
 const burgerBtn = document.querySelector('.burger-desctop__btn');
 const burgerMenuDesc = document.querySelector('.burger-desctop')
+const body = document.querySelector('body')
 burgerBtn.addEventListener('click', (e) => {
 	burgerBtn.classList.toggle('active');
 	burgerMenuDesc.classList.toggle('open');
+	body.classList.toggle('lock');
+
 })
 
 
 
 const tabsLink = document.querySelectorAll('.tabs__title-link');
 const tabsBody = document.querySelectorAll('.tabs__body');
-
-
-
 
 tabsLink.forEach(el => {
 	el.addEventListener('click', () => {
@@ -45,13 +45,14 @@ tabsLink.forEach(el => {
 		el.classList.toggle('active')
 
 	})
-})
+});
+
+
 
 
 
 const accordionBody = document.querySelectorAll('.tabs__title-item');
 const accordionLink = document.querySelectorAll('.tabs__title-link_mobile');
-
 
 accordionLink.forEach(el => {
 	el.addEventListener('click', () => {
@@ -103,6 +104,7 @@ footerAccordionBtn.forEach(el => {
 
 
 
+ymaps.ready(init)
 
 const mapCoords = [59.923468, 30.360649];
 
@@ -119,11 +121,6 @@ function init() {
 	})
 	map.geoObjects.add(placemark);
 }
-
-
-
-ymaps.ready(init)
-
 
 
 

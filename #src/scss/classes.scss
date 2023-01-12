@@ -48,7 +48,9 @@ color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+	@media(max-width: 767px){
+		display: none;
+	}
 }
 .tabs__title-list {
 	display: grid;
@@ -73,9 +75,7 @@ margin: 0px 0px 0px 24px;
 line-height: 140%;
 color: #333333;
 @include adaptiv-font(24, 18);
-@media(max-width: 767px){
-	display: none;
-}
+
 
 }
 .tabs__title-link.active{
