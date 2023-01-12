@@ -69,7 +69,38 @@ accordionLink.forEach(el => {
 		el.classList.toggle('active')
 
 	})
-})
+});
+
+const footerAccordionBody = document.querySelectorAll('.footer__blocks-wrap');
+const footerAccordionBtn = document.querySelectorAll('.open-btn');
+
+footerAccordionBtn.forEach(el => {
+	el.addEventListener('click', () => {
+
+
+		footerAccordionBody.forEach(el => {
+			el.classList.remove('active')
+		});
+		const content = document.querySelector('#' + el.dataset.accord);
+		content.classList.toggle('active');
+
+
+		footerAccordionBtn.forEach(el => {
+			el.classList.remove('active')
+		});
+		el.classList.toggle('active');
+
+	})
+});
+
+
+
+
+
+
+
+
+
 
 
 
